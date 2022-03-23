@@ -9,8 +9,8 @@ conclussion: No reptile is human<br>
 
 <br>
 The premises should have a form:<br>
-Each x is y
-All x are y
-No x is/are y
-Some x are y
+Each x is y <br>
+All x are y <br>
+No x is/are y <br>
+Some x are y <br>
 Some x arenot y<br>
