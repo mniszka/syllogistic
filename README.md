@@ -13,4 +13,4 @@ Each x is y <br>
 All x are y <br>
 No x is/are y <br>
 Some x are y <br>
-Some x arenot y<br>
+Some x are not y<br>
