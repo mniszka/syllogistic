@@ -1,8 +1,8 @@
 # syllogistic
 
-A user write two or more sentences which are premises. The program return a conclussion.
+A user write two or more sentences which are premises. The program return a conclussion.<br>
 
-Example:
+Example:<br>
 premise 1: All humans are mammals <br>
-premise 2: No mammal is a reptile
-conclussion: No reptile is human
+premise 2: No mammal is a reptile<br>
+conclussion: No reptile is human<br>
