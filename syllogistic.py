@@ -20,7 +20,7 @@ def check_the_type_of_a_first_premise():
 	if premise_1_first_element == "all": return "PaS"
 	elif premise_1_first_element == "no" or premise_1_first_element == "any": return "PeS"
 	elif premise_1_first_element == "some" and not_in_the_sentence() == False: return "PiS"
-	elif premise_1_first_element == "some" and not_in_the_sentence() == True: return "PoS"
+	elif premise_1_first_element == "some" and not_in_the_sentence(): return "PoS"
 	else: return "The first premise does not have a correct form"
 
 def not_in_the_sentence():
@@ -35,7 +35,7 @@ def check_the_type_of_a_second_premise():
 	if premise_2_first_element == "all": return "PaS"
 	elif premise_2_first_element == "no" or premise_2_first_element == "any": return "PeS"
 	elif premise_2_first_element == "some" and not_in_the_sentence() == False: return "PiS"
-	elif premise_2_first_element == "some" and not_in_the_sentence() == True: return "PoS"
+	elif premise_2_first_element == "some" and not_in_the_sentence(): return "PoS"
 	else: return "The first premise does not have a correct form"
 
 def not_in_the_sentence():
