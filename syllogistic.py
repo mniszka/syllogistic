@@ -1,7 +1,7 @@
 # sentences
 
-premise_1 = "No woman is not a mother" #mothers
-premise_2 = "Some saint use to be a mother"
+premise_1 = "All woman are mother" #mothers
+premise_2 = "All Anna is a woman"
 
 #add: strip()
 #to lower case
@@ -77,8 +77,27 @@ inform_about_condition()
 
 #conclussion
 def conclusion():
-    if check_the_figure() == "figure 2" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PiS": return "SoP"
+    if check_the_figure() == "figure 1" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PaS": return "SaP"
+    elif check_the_figure() == "figure 1" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PaS": return "SeP"
+    elif check_the_figure() == "figure 1" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PiS": return "SiP"
+    elif check_the_figure() == "figure 1" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PiS": return "SoP"
+    
+    elif check_the_figure() == "figure 2" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PaS": return "SeP"
+    elif check_the_figure() == "figure 2" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PeS": return "SeP"
     elif check_the_figure() == "figure 2" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PiS": return "SoP"
-    elif check_the_figure() == "figure 2" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PiS": return "SoP"
-    elif check_the_figure() == "figure 2" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PiS": return "SoP"
+    elif check_the_figure() == "figure 2" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PoS": return "SoP"
+    
+    elif check_the_figure() == "figure 3" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PaS": return "SiP"
+    elif check_the_figure() == "figure 3" and check_the_type_of_a_first_premise() == "PiS" and check_the_type_of_a_second_premise() == "PaS": return "SiP"
+    elif check_the_figure() == "figure 3" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PiS": return "SiP"
+    elif check_the_figure() == "figure 3" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PaS": return "SoP"
+    elif check_the_figure() == "figure 3" and check_the_type_of_a_first_premise() == "PoS" and check_the_type_of_a_second_premise() == "PaS": return "SoP"
+    elif check_the_figure() == "figure 3" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PiS": return "SoP"
 
+    elif check_the_figure() == "figure 4" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PaS": return "SiP"
+    elif check_the_figure() == "figure 4" and check_the_type_of_a_first_premise() == "PaS" and check_the_type_of_a_second_premise() == "PeS": return "SeP"
+    elif check_the_figure() == "figure 4" and check_the_type_of_a_first_premise() == "PiS" and check_the_type_of_a_second_premise() == "PaS": return "SiP"
+    elif check_the_figure() == "figure 4" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PaS": return "SoP"
+    elif check_the_figure() == "figure 4" and check_the_type_of_a_first_premise() == "PeS" and check_the_type_of_a_second_premise() == "PiS": return "SoP"
+   
+print(conclusion())
