@@ -1,16 +1,16 @@
 # sentences
 
-premise_1 = "All woman are mother" #mothers
+premise_1 = "All woman are mother" #mothers- slicing method?
 premise_2 = "All Anna is a woman"
 
-#add: strip()
-#to lower case
-premise_1 = premise_1.lower()
-premise_2 = premise_2.lower()
+##co jeśli będzie rzeczownik 2-wyrazowy lub z przymiotnikiem?
 
-#split into a list
-premise_1 = premise_1.split()
-premise_2 = premise_2.split()
+
+# to lower case
+# strip
+# split the sentence into a list
+premise_1 = premise_1.lower().strip().split()
+premise_2 = premise_2.lower().strip().split()
 
 premise_1_first_element = premise_1[0]
 premise_2_first_element = premise_2[0]
